@@ -1,10 +1,11 @@
 'use client';
 
 import React, { useState } from 'react';
+import { REQUEST_LIST_DATA_SEO } from '../constants';
 import dayjs from 'dayjs';
 
-function ReserveSeo({ requestData }: { requestData: any[] }) {
-  const [reserveResult, setReserveResult] = useState<any[]>(requestData);
+function ReserveSeo() {
+  const [reserveResult, setReserveResult] = useState<any[]>(REQUEST_LIST_DATA_SEO);
   const [loading, setLoading] = useState(false);
 
   const handleReserve = async () => {
@@ -28,7 +29,7 @@ function ReserveSeo({ requestData }: { requestData: any[] }) {
 
   return (
     <div className='md:grid md:grid-cols-2 w-full gap-4'>
-      {requestData.map((data, i) => {
+      {REQUEST_LIST_DATA_SEO.map((data, i) => {
         const resultData = reserveResult.find((result) => result.date === data.date);
         const status = resultData?.result;
         const errorMsg = resultData?.error;
