@@ -16,11 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body
-        className={`${inter.className} bg-gray-900 flex justify-center p-12 text-gray-50`}
-      >
-        <div className='max-w-screen-xl'>{children}</div>
-      </body>
+      <body className={`${inter.className} bg-gray-900 flex justify-center p-12 text-gray-50`}>{children}</body>
     </html>
   );
 }
