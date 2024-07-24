@@ -13,10 +13,10 @@ const REQUEST_LIST_DATA = [
   { date: '20240830', time: '12', managerCode: 'HEL20240423001', userId: '2023602' },
 ];
 const REQUEST_LIST_DATA_SEO = [
-  { date: '20240809', time: '13', managerCode: 'HEL20240423001', userId: '2023602' },
-  { date: '20240816', time: '15', managerCode: 'HEL20240423001', userId: '2023602' },
-  { date: '20240823', time: '16', managerCode: 'HEL20240423001', userId: '2023602' },
-  { date: '20240830', time: '15', managerCode: 'HEL20240423001', userId: '2023602' },
+  { date: '20240809', time: '13', managerCode: 'HEL20240423001', userId: '2023530' },
+  { date: '20240816', time: '15', managerCode: 'HEL20240423001', userId: '2023530' },
+  { date: '20240823', time: '16', managerCode: 'HEL20240423001', userId: '2023530' },
+  { date: '20240830', time: '15', managerCode: 'HEL20240423001', userId: '2023530' },
 ];
 const REQUEST_URL_LIST = REQUEST_LIST_DATA.map((data) => generateHelthReserveURL(data));
 export { REQUEST_URL_LIST, REQUEST_LIST_DATA, COOKIE, COOKIE_SEO, REQUEST_LIST_DATA_SEO };
